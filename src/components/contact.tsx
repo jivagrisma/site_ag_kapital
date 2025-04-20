@@ -12,7 +12,7 @@ export default function Contact() {
           <div className="flex flex-col gap-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Have questions or need assistance?</h2>
-              <p className="text-xl text-muted-foreground">We're here to help you succeed.</p>
+              <p className="text-xl text-muted-foreground">We&apos;re here to help you succeed.</p>
             </div>
             <div className="rounded-lg overflow-hidden">
               <div className="relative aspect-video w-full">

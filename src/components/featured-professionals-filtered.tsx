@@ -65,7 +65,7 @@ export default function FeaturedProfessionalsFiltered() {
     if (featuredProfessionals.length === 0) {
       setFeaturedProfessionals(selectFeaturedProfessionals());
     }
-  }, [professionals, featuredProfessionals.length]);
+  }, [featuredProfessionals.length]);
 
   const filteredProfessionals = useMemo(() => {
     return selectedCategory === "All categories"
@@ -90,7 +90,7 @@ export default function FeaturedProfessionalsFiltered() {
     const startIndex = currentPage * cardsPerPage;
     const endIndex = Math.min(startIndex + cardsPerPage, featuredProfessionals.length);
     return featuredProfessionals.slice(startIndex, endIndex);
-  }, [currentPage, featuredProfessionals, professionals, cardsPerPage]);
+  }, [currentPage, featuredProfessionals, cardsPerPage]);
 
   const handleImageError = (id: number) => {
     setImageErrors((prev) => ({
